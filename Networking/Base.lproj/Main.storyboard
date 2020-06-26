@@ -30,7 +30,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibs-gg-n4o">
-                                            <rect key="frame" x="228" y="34" width="50" height="16"/>
+                                            <rect key="frame" x="129" y="34" width="50" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -45,13 +45,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Курс в рублях:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roF-fY-8gx">
-                                            <rect key="frame" x="115" y="34" width="93" height="16"/>
+                                            <rect key="frame" x="16" y="34" width="93" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Предыдущий курс:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67S-kf-QpE">
-                                            <rect key="frame" x="115" y="58" width="120" height="16"/>
+                                            <rect key="frame" x="16" y="58" width="120" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -63,31 +63,31 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Номинал:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKB-fw-1dl">
-                                            <rect key="frame" x="16" y="33" width="61.5" height="16"/>
+                                            <rect key="frame" x="185" y="11" width="61.5" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wPS-OX-TNK">
-                                            <rect key="frame" x="296" y="34" width="15" height="14"/>
+                                            <rect key="frame" x="194" y="35" width="15" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="67S-kf-QpE" firstAttribute="top" secondItem="roF-fY-8gx" secondAttribute="bottom" constant="8" id="3LJ-is-j4p"/>
+                                        <constraint firstItem="SKB-fw-1dl" firstAttribute="top" secondItem="xB5-Zp-Uai" secondAttribute="topMargin" id="4W4-vk-oNR"/>
                                         <constraint firstItem="Ynu-Rf-y5P" firstAttribute="leading" secondItem="67S-kf-QpE" secondAttribute="trailing" constant="20" id="7GC-wO-oAL"/>
                                         <constraint firstItem="ibs-gg-n4o" firstAttribute="top" secondItem="xB5-Zp-Uai" secondAttribute="topMargin" constant="23" id="9Hf-P0-10C"/>
                                         <constraint firstItem="Ynu-Rf-y5P" firstAttribute="top" secondItem="ibs-gg-n4o" secondAttribute="bottom" constant="8" id="F4G-48-vxX"/>
-                                        <constraint firstItem="roF-fY-8gx" firstAttribute="leading" secondItem="xB5-Zp-Uai" secondAttribute="leadingMargin" constant="99" id="H9Y-WP-Zgp"/>
                                         <constraint firstItem="Axg-fn-XyO" firstAttribute="leading" secondItem="xB5-Zp-Uai" secondAttribute="leadingMargin" id="K8i-3g-bxc"/>
                                         <constraint firstItem="ibs-gg-n4o" firstAttribute="leading" secondItem="roF-fY-8gx" secondAttribute="trailing" constant="20" id="PQf-6P-Foo"/>
+                                        <constraint firstItem="roF-fY-8gx" firstAttribute="leading" secondItem="xB5-Zp-Uai" secondAttribute="leadingMargin" id="U8l-Bp-vPm"/>
                                         <constraint firstItem="tO3-dX-cHq" firstAttribute="leading" secondItem="Axg-fn-XyO" secondAttribute="trailing" constant="19" id="Ywe-dv-vm4"/>
-                                        <constraint firstItem="SKB-fw-1dl" firstAttribute="leading" secondItem="xB5-Zp-Uai" secondAttribute="leadingMargin" id="eOb-gS-Kyd"/>
+                                        <constraint firstItem="SKB-fw-1dl" firstAttribute="leading" secondItem="tO3-dX-cHq" secondAttribute="trailing" constant="18" id="cHM-NR-7Dv"/>
                                         <constraint firstItem="Axg-fn-XyO" firstAttribute="top" secondItem="xB5-Zp-Uai" secondAttribute="topMargin" id="gzQ-yB-Cgq"/>
-                                        <constraint firstItem="67S-kf-QpE" firstAttribute="leading" secondItem="xB5-Zp-Uai" secondAttribute="leadingMargin" constant="99" id="hCk-G8-2Mu"/>
                                         <constraint firstItem="ibs-gg-n4o" firstAttribute="top" secondItem="tO3-dX-cHq" secondAttribute="bottom" constant="6" id="j3V-Fb-Ep9"/>
-                                        <constraint firstItem="SKB-fw-1dl" firstAttribute="top" secondItem="Axg-fn-XyO" secondAttribute="bottom" constant="5" id="lft-43-bHz"/>
                                         <constraint firstItem="67S-kf-QpE" firstAttribute="top" secondItem="ibs-gg-n4o" secondAttribute="bottom" constant="8" id="oKD-Gu-fGU"/>
+                                        <constraint firstItem="67S-kf-QpE" firstAttribute="leading" secondItem="xB5-Zp-Uai" secondAttribute="leadingMargin" id="u1l-I4-clx"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -105,13 +105,7 @@
                             <outlet property="delegate" destination="6mx-cg-gT5" id="Kpz-5a-kvO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="chd-SU-Kkh">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="igR-bE-Y55">
-                            <connections>
-                                <action selector="getJson:" destination="6mx-cg-gT5" id="MPf-tJ-7yn"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Title" id="chd-SU-Kkh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLa-qR-EKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

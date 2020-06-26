@@ -23,7 +23,6 @@ class CoursesViewController: UITableViewController {
         fetchDataV3()
     }
 
-    
 
     // MARK: - Table view data source
 
@@ -84,8 +83,6 @@ class CoursesViewController: UITableViewController {
             }
         }.resume() 
     }
-    
-
 }
 
 

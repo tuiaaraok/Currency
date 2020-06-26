@@ -20,7 +20,7 @@
 		A8A6BC9E230D8CE40079433E /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		A8A6BCA0230D8CFE0079433E /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		A8A6BCA4230DC6CB0079433E /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
-		A8FB4A06216208E300026A1A /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8FB4A06216208E300026A1A /* Курсы валют.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Курсы валют.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FB4A09216208E300026A1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FB4A0E216208E300026A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8FB4A10216208E400026A1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		A8FB4A07216208E300026A1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A8FB4A06216208E300026A1A /* Networking.app */,
+				A8FB4A06216208E300026A1A /* Курсы валют.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 			);
 			name = Networking;
 			productName = Networking;
-			productReference = A8FB4A06216208E300026A1A /* Networking.app */;
+			productReference = A8FB4A06216208E300026A1A /* Курсы валют.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -298,7 +298,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.Networking;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Курсы валют";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.Networking;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Курсы валют";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
