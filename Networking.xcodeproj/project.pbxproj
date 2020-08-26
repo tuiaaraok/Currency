@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63CEBA7224F6759600882B38 /* DataFetcherService .swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CEBA7124F6759600882B38 /* DataFetcherService .swift */; };
 		A8A6BC9F230D8CE40079433E /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6BC9E230D8CE40079433E /* CoursesViewController.swift */; };
 		A8A6BCA1230D8CFE0079433E /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6BCA0230D8CFE0079433E /* CourseCell.swift */; };
 		A8A6BCA5230DC6CB0079433E /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6BCA4230DC6CB0079433E /* Course.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63CEBA7124F6759600882B38 /* DataFetcherService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataFetcherService .swift"; sourceTree = "<group>"; };
 		A8A6BC9E230D8CE40079433E /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		A8A6BCA0230D8CFE0079433E /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		A8A6BCA4230DC6CB0079433E /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -39,6 +41,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63CEBA6C24F6743600882B38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8A6BCA4230DC6CB0079433E /* Course.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63CEBA6D24F6744300882B38 /* UIBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				A8FB4A0D216208E300026A1A /* Main.storyboard */,
+				A8FB4A12216208E400026A1A /* LaunchScreen.storyboard */,
+			);
+			path = UIBuilders;
+			sourceTree = "<group>";
+		};
+		63CEBA6E24F6745100882B38 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A8FB4A10216208E400026A1A /* Assets.xcassets */,
+				A8FB4A09216208E300026A1A /* AppDelegate.swift */,
+				A8FB4A15216208E400026A1A /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		63CEBA6F24F6747000882B38 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8A6BC9E230D8CE40079433E /* CoursesViewController.swift */,
+				A8A6BCA0230D8CFE0079433E /* CourseCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63CEBA7024F6757800882B38 /* ParserManager */ = {
+			isa = PBXGroup;
+			children = (
+				63CEBA7124F6759600882B38 /* DataFetcherService .swift */,
+			);
+			path = ParserManager;
+			sourceTree = "<group>";
+		};
 		A8FB49FD216208E300026A1A = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +104,11 @@
 		A8FB4A08216208E300026A1A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A8FB4A09216208E300026A1A /* AppDelegate.swift */,
-				A8A6BC9E230D8CE40079433E /* CoursesViewController.swift */,
-				A8A6BCA0230D8CFE0079433E /* CourseCell.swift */,
-				A8A6BCA4230DC6CB0079433E /* Course.swift */,
-				A8FB4A0D216208E300026A1A /* Main.storyboard */,
-				A8FB4A10216208E400026A1A /* Assets.xcassets */,
-				A8FB4A12216208E400026A1A /* LaunchScreen.storyboard */,
-				A8FB4A15216208E400026A1A /* Info.plist */,
+				63CEBA6F24F6747000882B38 /* ViewControllers */,
+				63CEBA6C24F6743600882B38 /* Model */,
+				63CEBA7024F6757800882B38 /* ParserManager */,
+				63CEBA6D24F6744300882B38 /* UIBuilders */,
+				63CEBA6E24F6745100882B38 /* SupportFiles */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -143,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8A6BCA1230D8CFE0079433E /* CourseCell.swift in Sources */,
+				63CEBA7224F6759600882B38 /* DataFetcherService .swift in Sources */,
 				A8A6BCA5230DC6CB0079433E /* Course.swift in Sources */,
 				A8A6BC9F230D8CE40079433E /* CoursesViewController.swift in Sources */,
 				A8FB4A0A216208E300026A1A /* AppDelegate.swift in Sources */,
@@ -292,7 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Networking/Info.plist;
+				INFOPLIST_FILE = Networking/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Networking/Info.plist;
+				INFOPLIST_FILE = Networking/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
