@@ -2,8 +2,8 @@
 //  Course.swift
 //  Networking
 //
-//  Created by Alexey Efimov on 21/08/2019.
-//  Copyright © 2019 Alexey Efimov. All rights reserved.
+//  Created by Туйаара Оконешникова on 26/08/2020.
+//  Copyright © 2020 Туйаара Оконешникова. All rights reserved.
 //
 
 struct Money: Decodable {
@@ -29,6 +29,3 @@ struct Description: Decodable {
         case previous = "Previous"
        }
 }
-
-var valutesName = ["AUD", "AZN", "GBP", "AMD", "BYN", "BGN", "BRL", "HUF", "HKD", "DKK", "USD", "EUR", "INR", "KZT", "CAD", "KGS", "CNY", "MDL", "NOK", "PLN", "RON", "XDR", "SGD", "TJS", "TRY", "TMT", "UZS", "UAH", "CZK", "SEK", "CHF", "ZAR", "KRW", "JPY"]
-   

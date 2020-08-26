@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Networking
 //
-//  Created by Alexey Efimov on 01/10/2018.
-//  Copyright © 2018 Alexey Efimov. All rights reserved.
+//  Created by Туйаара Оконешникова on 03/03/2020.
+//  Copyright © 2020 Туйаара Оконешникова. All rights reserved.
 //
 
 import UIKit

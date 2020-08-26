@@ -2,15 +2,16 @@
 //  CoursesViewController.swift
 //  Networking
 //
-//  Created by Alexey Efimov on 21/08/2019.
-//  Copyright © 2019 Alexey Efimov. All rights reserved.
+//  Created by Туйаара Оконешникова on 03/03/2020.
+//  Copyright © 2020 Туйаара Оконешникова. All rights reserved.
 //
 
 import UIKit
 
-class CoursesViewController: UITableViewController {
+class MainViewController: UITableViewController {
 
     private let url = "https://www.cbr-xml-daily.ru/daily_json.js"
+    var valutesName = ["AUD", "AZN", "GBP", "AMD", "BYN", "BGN", "BRL", "HUF", "HKD", "DKK", "USD", "EUR", "INR", "KZT", "CAD", "KGS", "CNY", "MDL", "NOK", "PLN", "RON", "XDR", "SGD", "TJS", "TRY", "TMT", "UZS", "UAH", "CZK", "SEK", "CHF", "ZAR", "KRW", "JPY"]
 
     var money: [Money] = []
     var valutesDict: [String:Description] = [:]
@@ -29,9 +30,9 @@ class CoursesViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CourseCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         let valutes = valutesDict[valutesName[indexPath.row]]
-        cell.configure(with: valutes, index: indexPath)
+        cell.configure(with: valutes, indexPath)
 
         let dateText = money[0].date
         let endIndex = dateText.index(dateText.endIndex , offsetBy: -15)

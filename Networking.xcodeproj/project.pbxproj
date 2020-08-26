@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		63CEBA7224F6759600882B38 /* DataFetcherService .swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CEBA7124F6759600882B38 /* DataFetcherService .swift */; };
-		A8A6BC9F230D8CE40079433E /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6BC9E230D8CE40079433E /* CoursesViewController.swift */; };
-		A8A6BCA1230D8CFE0079433E /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6BCA0230D8CFE0079433E /* CourseCell.swift */; };
-		A8A6BCA5230DC6CB0079433E /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6BCA4230DC6CB0079433E /* Course.swift */; };
+		A8A6BC9F230D8CE40079433E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6BC9E230D8CE40079433E /* MainViewController.swift */; };
+		A8A6BCA1230D8CFE0079433E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6BCA0230D8CFE0079433E /* TableViewCell.swift */; };
+		A8A6BCA5230DC6CB0079433E /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6BCA4230DC6CB0079433E /* Money.swift */; };
 		A8FB4A0A216208E300026A1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB4A09216208E300026A1A /* AppDelegate.swift */; };
 		A8FB4A0F216208E300026A1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FB4A0D216208E300026A1A /* Main.storyboard */; };
 		A8FB4A11216208E400026A1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8FB4A10216208E400026A1A /* Assets.xcassets */; };
@@ -19,9 +19,9 @@
 
 /* Begin PBXFileReference section */
 		63CEBA7124F6759600882B38 /* DataFetcherService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataFetcherService .swift"; sourceTree = "<group>"; };
-		A8A6BC9E230D8CE40079433E /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
-		A8A6BCA0230D8CFE0079433E /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
-		A8A6BCA4230DC6CB0079433E /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		A8A6BC9E230D8CE40079433E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A8A6BCA0230D8CFE0079433E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A8A6BCA4230DC6CB0079433E /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		A8FB4A06216208E300026A1A /* Курсы валют.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Курсы валют.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FB4A09216208E300026A1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FB4A0E216208E300026A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		63CEBA6C24F6743600882B38 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A8A6BCA4230DC6CB0079433E /* Course.swift */,
+				A8A6BCA4230DC6CB0079433E /* Money.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -71,8 +71,8 @@
 		63CEBA6F24F6747000882B38 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A8A6BC9E230D8CE40079433E /* CoursesViewController.swift */,
-				A8A6BCA0230D8CFE0079433E /* CourseCell.swift */,
+				A8A6BC9E230D8CE40079433E /* MainViewController.swift */,
+				A8A6BCA0230D8CFE0079433E /* TableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Alexey Efimov";
+				ORGANIZATIONNAME = "Туйаара Оконешникова";
 				TargetAttributes = {
 					A8FB4A05216208E300026A1A = {
 						CreatedOnToolsVersion = 10.0;
@@ -185,10 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8A6BCA1230D8CFE0079433E /* CourseCell.swift in Sources */,
+				A8A6BCA1230D8CFE0079433E /* TableViewCell.swift in Sources */,
 				63CEBA7224F6759600882B38 /* DataFetcherService .swift in Sources */,
-				A8A6BCA5230DC6CB0079433E /* Course.swift in Sources */,
-				A8A6BC9F230D8CE40079433E /* CoursesViewController.swift in Sources */,
+				A8A6BCA5230DC6CB0079433E /* Money.swift in Sources */,
+				A8A6BC9F230D8CE40079433E /* MainViewController.swift in Sources */,
 				A8FB4A0A216208E300026A1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,12 +336,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4825WAP7SS;
 				INFOPLIST_FILE = Networking/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = Valutes;
 				PRODUCT_NAME = "Курсы валют";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,12 +354,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4825WAP7SS;
 				INFOPLIST_FILE = Networking/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.Networking;
+				PRODUCT_BUNDLE_IDENTIFIER = Valutes;
 				PRODUCT_NAME = "Курсы валют";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
