@@ -27,5 +27,5 @@ struct Description: Decodable {
         case name = "Name"
         case value = "Value"
         case previous = "Previous"
-       }
+    }
 }

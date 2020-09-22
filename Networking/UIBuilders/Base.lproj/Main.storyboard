@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="88" id="geb-BX-91h" customClass="CourseCell" customModule="Курсы_валют" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="88" id="geb-BX-91h" customClass="TableViewCell" customModule="Курсы_валют" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="geb-BX-91h" id="xB5-Zp-Uai">
@@ -24,52 +24,36 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of course" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="Axg-fn-XyO">
-                                            <rect key="frame" x="16" y="11" width="189" height="17"/>
+                                            <rect key="frame" x="16" y="16" width="343" height="17"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Курс в рублях:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="roF-fY-8gx">
-                                            <rect key="frame" x="16" y="34" width="165" height="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="roF-fY-8gx">
+                                            <rect key="frame" x="16" y="36" width="100" height="37"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Предыдущий курс:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="67S-kf-QpE">
-                                            <rect key="frame" x="16" y="58" width="194" height="16"/>
+                                            <rect key="frame" x="229" y="53" width="194" height="16"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Номинал:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SKB-fw-1dl">
-                                            <rect key="frame" x="276" y="11" width="88" height="16"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wPS-OX-TNK">
-                                            <rect key="frame" x="195" y="35" width="15" height="14"/>
+                                            <rect key="frame" x="150" y="47" width="15" height="14"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tO3-dX-cHq">
-                                            <rect key="frame" x="225" y="11" width="32" height="15"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
-                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="courseInRub" destination="roF-fY-8gx" id="v6h-b1-8E1"/>
                                     <outlet property="courseNameLabel" destination="Axg-fn-XyO" id="5cN-Ev-F1o"/>
-                                    <outlet property="nominalLabel" destination="SKB-fw-1dl" id="Wy7-Uw-2gG"/>
-                                    <outlet property="numberOfLessons" destination="roF-fY-8gx" id="v6h-b1-8E1"/>
-                                    <outlet property="numberOfTests" destination="67S-kf-QpE" id="Nrj-Z5-arn"/>
-                                    <outlet property="sokrName" destination="tO3-dX-cHq" id="AbP-ma-llY"/>
+                                    <outlet property="lastCourseInRub" destination="67S-kf-QpE" id="Nrj-Z5-arn"/>
                                     <outlet property="strelkaImage" destination="wPS-OX-TNK" id="XGk-33-cda"/>
                                 </connections>
                             </tableViewCell>
@@ -80,8 +64,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="chd-SU-Kkh"/>
+                    <connections>
+                        <outlet property="viewModel" destination="dh6-9H-7zl" id="wS6-Sv-Otg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLa-qR-EKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="38n-lz-jLC" customClass="DataFetcherService" customModule="Курсы_валют" customModuleProvider="target"/>
+                <customObject id="dh6-9H-7zl" customClass="ViewModel" customModule="Курсы_валют" customModuleProvider="target">
+                    <connections>
+                        <outlet property="dataFetcherService" destination="38n-lz-jLC" id="RlV-vi-8vG"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="5324" y="901.79910044977521"/>
         </scene>
