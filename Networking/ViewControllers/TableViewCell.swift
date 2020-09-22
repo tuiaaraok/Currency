@@ -14,6 +14,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var courseInRub: UILabel!
     @IBOutlet var lastCourseInRub: UILabel!
     @IBOutlet var strelkaImage: UIImageView!
+    @IBOutlet weak var abbreviatedNameLabel: UILabel!
     
     var viewModel: TableViewCellViewModelType? {
         willSet(viewModel) {
@@ -23,6 +24,7 @@ class TableViewCell: UITableViewCell {
             courseInRub.text = viewModel.courseInRub
             lastCourseInRub.text = viewModel.lastCourseInRub
             strelkaImage.image = viewModel.strelkaImage
+            abbreviatedNameLabel.text = viewModel.abbreviatedName
         }
     }
 }
