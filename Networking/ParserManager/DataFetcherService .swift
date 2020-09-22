@@ -10,8 +10,8 @@ import UIKit
 
 class DataFetcherService: NSObject {
     
-    var money: [Money]?
-    var valutesDict: [String:Description]?
+    var currencies: [Currency]?
+    var currenciesDescription: [String:Description]?
     private let url = "https://www.cbr-xml-daily.ru/daily_json.js"
     
     func fetchData()  {
@@ -23,11 +23,11 @@ class DataFetcherService: NSObject {
         guard let data = data else { return }
             
         do {
-            let money = [try JSONDecoder().decode(Money.self, from: data)]
+            let currencies = [try JSONDecoder().decode(Currency.self, from: data)]
 
              DispatchQueue.main.async {
-                self.money = money 
-                self.valutesDict = (self.money?[0].valute)!
+                self.currencies = currencies
+                self.currenciesDescription = (self.currencies?[0].valute)!
                 }
             } catch let error {
                 print(error)

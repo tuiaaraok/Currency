@@ -6,7 +6,7 @@
 //  Copyright © 2020 Туйаара Оконешникова. All rights reserved.
 //
 
-struct Money: Decodable {
+struct Currency: Decodable {
     let date: String
     let valute: [String : Description]
     
