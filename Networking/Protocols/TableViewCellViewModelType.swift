@@ -14,4 +14,5 @@ protocol TableViewCellViewModelType {
     var courseInRub: String { get }
     var lastCourseInRub: String { get }
     var strelkaImage: UIImage { get }
+    var abbreviatedName: String { get }
 }

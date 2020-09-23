@@ -15,8 +15,8 @@ class MainViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.viewModel.dataFetcherService.fetchData()
         DispatchQueue.main.async {
+            self.viewModel.dataFetcherService.fetchData()
             self.tableView.reloadData()
         }
     }
@@ -29,10 +29,10 @@ class MainViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+        title = viewModel.dateTitle()
         guard let viewModel = viewModel else { return TableViewCell() }
         let cellViewModel = viewModel.cellViewModel(forIndexPath: indexPath)
         cell.viewModel = cellViewModel
-        title = viewModel.dateTitle()
         
         return cell
     }

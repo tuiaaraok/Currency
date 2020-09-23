@@ -29,6 +29,6 @@ class ViewModel: DataFetcherService {
         fetchData()
         guard let valutes = currenciesDescription?[currencyNames[indexPath.row]] else { return nil }
         
-        return TableViewCellViewModel(description: valutes)
+        return TableViewCellViewModel(description: valutes, abbreviatedName: currencyNames[indexPath.row])
     }
 }
