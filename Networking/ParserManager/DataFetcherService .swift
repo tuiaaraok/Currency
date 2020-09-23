@@ -14,7 +14,7 @@ class DataFetcherService: NSObject {
     var currenciesDescription: [String:Description]?
     private let url = "https://www.cbr-xml-daily.ru/daily_json.js"
     
-    func fetchData()  {
+    func fetchData(tableView: UITableView?)  {
      
         guard let url = URL(string: url) else { return }
         
@@ -28,6 +28,7 @@ class DataFetcherService: NSObject {
              DispatchQueue.main.async {
                 self.currencies = currencies
                 self.currenciesDescription = (self.currencies?[0].valute)!
+                tableView?.reloadData()
                 }
             } catch let error {
                 print(error)
