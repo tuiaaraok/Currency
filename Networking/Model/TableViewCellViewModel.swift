@@ -17,7 +17,8 @@ class TableViewCellViewModel: TableViewCellViewModelType {
     }
     
     var courseInRub: String {
-        return String(description.value) + "P"
+        let x = Double(round(10000*description.value)/10000)
+        return String(x) + "P"
     }
     
     var lastCourseInRub: String {
