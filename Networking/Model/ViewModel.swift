@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ViewModel: DataFetcherService {
+class ViewModel: NSObject {
     
     @IBOutlet weak var  dataFetcherService: DataFetcherService!
     
@@ -19,16 +19,17 @@ class ViewModel: DataFetcherService {
     }
     
     func dateTitle() -> String {
-        guard let dateText = currencies?[0].date else { return "" }
+        guard let dateText = dataFetcherService.currencies?[0].date else { return "" }
         let endIndex = dateText.index(dateText.endIndex , offsetBy: -15)
         let newStr = String(dateText[..<endIndex])
         return "Данные на \(newStr)"
     }
     
     func cellViewModel(forIndexPath indexPath: IndexPath) -> TableViewCellViewModelType? {
-        fetchData()
-        guard let valutes = currenciesDescription?[currencyNames[indexPath.row]] else { return nil }
+        dataFetcherService.fetchData(tableView: nil)
+        guard let valutes = dataFetcherService.currenciesDescription?[currencyNames[indexPath.row]] else { return nil }
         
-        return TableViewCellViewModel(description: valutes, abbreviatedName: currencyNames[indexPath.row])
+        return TableViewCellViewModel(description: valutes,
+                                      abbreviatedName: currencyNames[indexPath.row])
     }
 }

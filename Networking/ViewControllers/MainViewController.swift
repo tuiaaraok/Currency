@@ -15,10 +15,7 @@ class MainViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.viewModel.dataFetcherService.fetchData()
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+        viewModel.dataFetcherService.fetchData(tableView: tableView)
     }
 
     // MARK: - Table view data source
@@ -28,17 +25,16 @@ class MainViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        self.title = self.viewModel.dateTitle()
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+        
         guard let viewModel = viewModel else { return TableViewCell() }
         let cellViewModel = viewModel.cellViewModel(forIndexPath: indexPath)
         cell.viewModel = cellViewModel
-        title = viewModel.dateTitle()
         
         return cell
     }
-    
-    // MARK: - TableViewDelegate устанавливаем высоту ячейки
-    
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
     }
