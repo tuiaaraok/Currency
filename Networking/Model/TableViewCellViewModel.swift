@@ -35,11 +35,7 @@ class TableViewCellViewModel: TableViewCellViewModelType {
     var abbreviatedName: String
     
     var strelkaImage: UIImage {
-        if description.value > description.previous {
-            return #imageLiteral(resourceName: "treugolnik-dlya-samyh-malenkih")
-               } else {
-            return #imageLiteral(resourceName: "2")
-               }
+        return description.value > description.previous ?  #imageLiteral(resourceName: "treugolnik-dlya-samyh-malenkih") : #imageLiteral(resourceName: "2")
     }
     
     init(description: Description, abbreviatedName: String) {
