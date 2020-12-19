@@ -17,7 +17,7 @@
                BlueprintIdentifier = "A8FB4A05216208E300026A1A"
                BuildableName = "&#x41a;&#x443;&#x440;&#x441;&#x44b; &#x432;&#x430;&#x43b;&#x44e;&#x442;.app"
                BlueprintName = "Networking"
-               ReferencedContainer = "container:Networking.xcodeproj">
+               ReferencedContainer = "container:&#x41a;&#x443;&#x440;&#x441;&#x44b; &#x432;&#x430;&#x43b;&#x44e;&#x442;.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,7 +33,7 @@
             BlueprintIdentifier = "A8FB4A05216208E300026A1A"
             BuildableName = "&#x41a;&#x443;&#x440;&#x441;&#x44b; &#x432;&#x430;&#x43b;&#x44e;&#x442;.app"
             BlueprintName = "Networking"
-            ReferencedContainer = "container:Networking.xcodeproj">
+            ReferencedContainer = "container:&#x41a;&#x443;&#x440;&#x441;&#x44b; &#x432;&#x430;&#x43b;&#x44e;&#x442;.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -56,7 +56,7 @@
             BlueprintIdentifier = "A8FB4A05216208E300026A1A"
             BuildableName = "&#x41a;&#x443;&#x440;&#x441;&#x44b; &#x432;&#x430;&#x43b;&#x44e;&#x442;.app"
             BlueprintName = "Networking"
-            ReferencedContainer = "container:Networking.xcodeproj">
+            ReferencedContainer = "container:&#x41a;&#x443;&#x440;&#x441;&#x44b; &#x432;&#x430;&#x43b;&#x44e;&#x442;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -73,7 +73,7 @@
             BlueprintIdentifier = "A8FB4A05216208E300026A1A"
             BuildableName = "&#x41a;&#x443;&#x440;&#x441;&#x44b; &#x432;&#x430;&#x43b;&#x44e;&#x442;.app"
             BlueprintName = "Networking"
-            ReferencedContainer = "container:Networking.xcodeproj">
+            ReferencedContainer = "container:&#x41a;&#x443;&#x440;&#x441;&#x44b; &#x432;&#x430;&#x43b;&#x44e;&#x442;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

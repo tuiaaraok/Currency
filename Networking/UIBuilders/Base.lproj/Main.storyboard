@@ -23,14 +23,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="Axg-fn-XyO">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="Axg-fn-XyO">
                                             <rect key="frame" x="16" y="17" width="343" height="17"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="roF-fY-8gx">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="course in rub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="roF-fY-8gx">
                                             <rect key="frame" x="93" y="40" width="97" height="37"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
@@ -41,24 +41,41 @@
                                             <rect key="frame" x="228" y="50" width="14" height="14"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="67S-kf-QpE">
-                                            <rect key="frame" x="270" y="50" width="69" height="16"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last course" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="67S-kf-QpE">
+                                            <rect key="frame" x="257.5" y="50" width="81.5" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="fa5-zl-QUQ"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CHL-F4-c2P">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CHL-F4-c2P">
                                             <rect key="frame" x="22" y="43" width="69" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                             <color key="textColor" red="0.46276739950000001" green="0.66113836979999996" blue="0.73293798570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="FhA-qj-3g7">
+                                            <rect key="frame" x="177.5" y="34" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="6Im-E7-StO"/>
+                                                <constraint firstAttribute="width" constant="20" id="IOr-jh-M6f"/>
+                                            </constraints>
+                                        </activityIndicatorView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="67S-kf-QpE" secondAttribute="bottom" constant="11" id="3bI-zg-8WB"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="67S-kf-QpE" secondAttribute="trailing" constant="20" id="9NU-zz-Ccd"/>
+                                        <constraint firstItem="67S-kf-QpE" firstAttribute="leading" secondItem="FhA-qj-3g7" secondAttribute="trailing" constant="60" id="ALH-lv-Qjj"/>
+                                        <constraint firstItem="FhA-qj-3g7" firstAttribute="centerY" secondItem="xB5-Zp-Uai" secondAttribute="centerY" id="irE-0r-VPG"/>
+                                        <constraint firstItem="FhA-qj-3g7" firstAttribute="centerX" secondItem="xB5-Zp-Uai" secondAttribute="centerX" id="pre-7z-nkq"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="abbreviatedNameLabel" destination="CHL-F4-c2P" id="KAI-sf-DTX"/>
+                                    <outlet property="activityIndicator" destination="FhA-qj-3g7" id="Aja-4D-8aC"/>
                                     <outlet property="courseInRub" destination="roF-fY-8gx" id="v6h-b1-8E1"/>
                                     <outlet property="courseNameLabel" destination="Axg-fn-XyO" id="5cN-Ev-F1o"/>
                                     <outlet property="lastCourseInRub" destination="67S-kf-QpE" id="Nrj-Z5-arn"/>

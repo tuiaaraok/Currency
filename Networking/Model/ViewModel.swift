@@ -12,6 +12,8 @@ class ViewModel: NSObject {
     
     @IBOutlet weak var  dataFetcherService: DataFetcherService!
     
+    var workWithString: WorkWithString!
+    
      var currencyNames = ["AUD", "AZN", "GBP", "AMD", "BYN", "BGN", "BRL", "HUF", "HKD", "DKK", "USD", "EUR", "INR", "KZT", "CAD", "KGS", "CNY", "MDL", "NOK", "PLN", "RON", "XDR", "SGD", "TJS", "TRY", "TMT", "UZS", "UAH", "CZK", "SEK", "CHF", "ZAR", "KRW", "JPY"]
     
     func numberOfRowsInSection() -> Int {
@@ -19,10 +21,9 @@ class ViewModel: NSObject {
     }
     
     func dateTitle() -> String {
-        guard let dateText = dataFetcherService.currencies?[0].date else { return "" }
-        let endIndex = dateText.index(dateText.endIndex , offsetBy: -15)
-        let newStr = String(dateText[..<endIndex])
-        return "Данные на \(newStr)"
+        workWithString = WorkWithString()
+        let date = workWithString.deleteLastChracters(in: dataFetcherService.currencies?[0].date)
+        return "Данные на \(date)"
     }
     
     func cellViewModel(forIndexPath indexPath: IndexPath) -> TableViewCellViewModelType? {

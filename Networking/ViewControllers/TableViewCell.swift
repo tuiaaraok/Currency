@@ -10,21 +10,29 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    @IBOutlet var courseNameLabel: UILabel!
-    @IBOutlet var courseInRub: UILabel!
-    @IBOutlet var lastCourseInRub: UILabel!
-    @IBOutlet var strelkaImage: UIImageView!
-    @IBOutlet weak var abbreviatedNameLabel: UILabel!
+    @IBOutlet private var courseNameLabel: UILabel!
+    @IBOutlet private var courseInRub: UILabel!
+    @IBOutlet private var lastCourseInRub: UILabel!
+    @IBOutlet private var strelkaImage: UIImageView!
+    @IBOutlet private weak var abbreviatedNameLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView! {
+        willSet(activityIndicator) {
+            activityIndicator.startAnimating()
+            activityIndicator.hidesWhenStopped = true
+        }
+    }
     
     var viewModel: TableViewCellViewModelType? {
+      
         willSet(viewModel) {
             guard let viewModel = viewModel else { return }
-
+            
             courseNameLabel.text = viewModel.courseName
             courseInRub.text = viewModel.courseInRub
             lastCourseInRub.text = viewModel.lastCourseInRub
             strelkaImage.image = viewModel.strelkaImage
             abbreviatedNameLabel.text = viewModel.abbreviatedName
+            activityIndicator.stopAnimating()
         }
     }
 }
