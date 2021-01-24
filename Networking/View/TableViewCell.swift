@@ -23,15 +23,13 @@ class TableViewCell: UITableViewCell {
     }
     
     var viewModel: TableViewCellViewModelType? {
-      
         willSet(viewModel) {
             guard let viewModel = viewModel else { return }
-            
             courseNameLabel.text = viewModel.courseName
             courseInRub.text = viewModel.courseInRub
             lastCourseInRub.text = viewModel.lastCourseInRub
-            strelkaImage.image = viewModel.strelkaImage
             abbreviatedNameLabel.text = viewModel.abbreviatedName
+            strelkaImage.image = viewModel.increase ?  #imageLiteral(resourceName: "treugolnik-dlya-samyh-malenkih") : #imageLiteral(resourceName: "2")
             activityIndicator.stopAnimating()
         }
     }

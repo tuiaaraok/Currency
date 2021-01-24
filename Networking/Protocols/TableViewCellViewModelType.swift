@@ -6,13 +6,13 @@
 //  Copyright © 2020 Туйаара Оконешникова. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 protocol TableViewCellViewModelType {
     
     var courseName: String { get }
     var courseInRub: String { get }
     var lastCourseInRub: String { get }
-    var strelkaImage: UIImage { get }
+    var increase: Bool { get }
     var abbreviatedName: String { get }
 }

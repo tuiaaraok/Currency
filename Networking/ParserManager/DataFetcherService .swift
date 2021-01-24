@@ -8,27 +8,20 @@
 
 import UIKit
 
-class DataFetcherService: NSObject {
+protocol DataFetcher {
+    func fetchData(completion: @escaping ([Currency]) -> Void, urlString: String)
+}
+class NetworkDataFetcher: NSObject, DataFetcher {
     
-    var currencies: [Currency]?
-    var currenciesDescription: [String:Description]?
-    private let url = "https://www.cbr-xml-daily.ru/daily_json.js"
-    
-    func fetchData(tableView: UITableView?)  {
-     
-        guard let url = URL(string: url) else { return }
-        
+    func fetchData(completion: @escaping ([Currency]) -> Void, urlString: String)  {
+        guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url) { (data, _, _) in
-            
         guard let data = data else { return }
             
         do {
             let currencies = [try JSONDecoder().decode(Currency.self, from: data)]
-
              DispatchQueue.main.async {
-                self.currencies = currencies
-                self.currenciesDescription = (self.currencies?[0].valute)!
-                tableView?.reloadData()
+                completion(currencies)
                 }
             } catch let error {
                 print(error)

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Туйаара Оконешникова. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class TableViewCellViewModel: TableViewCellViewModelType {
     
@@ -35,9 +35,8 @@ class TableViewCellViewModel: TableViewCellViewModelType {
     }
     
     var abbreviatedName: String
-    
-    var strelkaImage: UIImage {
-        return description.value > description.previous ?  #imageLiteral(resourceName: "treugolnik-dlya-samyh-malenkih") : #imageLiteral(resourceName: "2")
+    var increase: Bool {
+        description.value > description.previous
     }
     
     init(description: Description, abbreviatedName: String) {

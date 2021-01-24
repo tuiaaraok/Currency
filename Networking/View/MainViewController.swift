@@ -14,8 +14,12 @@ class MainViewController: UITableViewController {
       
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        viewModel.dataFetcherService.fetchData(tableView: tableView)
+        viewModel.getData()
+        NotificationCenter.default.addObserver(self, selector: #selector(reload), name: NSNotification.Name(rawValue: "reload"), object: nil)
+    }
+    
+    @objc func reload() {
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
